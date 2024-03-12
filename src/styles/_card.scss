@@ -1,0 +1,43 @@
+.card {
+  background-color: $white;
+  border-radius: $card-rad;
+  box-sizing: border-box;
+  padding: {
+    top: $card-padding;
+    left: $card-padding;
+    right: $card-padding;
+    bottom: $card-padding-bottom;
+  }
+
+  width: 100%;
+  max-width: $card-max-width;
+
+  &__qr-image-cont {
+    border-radius: $image-cont-rad;
+    overflow: hidden;
+  }
+  &__qr-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  &__info {
+      margin-top: 24px;
+
+  }
+  &__card-title {
+    font-size: 22px;
+    text-align: center;
+    line-height: 28px;
+    color: $dark-blue;
+  }
+  &__card-desc {
+    margin-top: 16px;
+    padding-inline: 16px;
+    color: $grayish-blue;
+    font-size: 15px;
+    letter-spacing: 0.19px;
+    line-height: 19px;
+    text-align: center;
+  }
+}
